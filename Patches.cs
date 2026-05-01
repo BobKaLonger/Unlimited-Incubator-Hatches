@@ -1,3 +1,9 @@
+using StardewValley;
+using StardewValley.GameData.FarmAnimals;
+using StardewValley.TokenizableStrings;
+using StardewValley.Events;
+using Object = StardewValley.Object;
+
 namespace UnlimitedIncubatorHatches
 {
     internal class Patches

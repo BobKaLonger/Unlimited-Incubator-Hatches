@@ -1,3 +1,8 @@
+using HarmonyLib;
+using StardewModdingAPI;
+using StardewModdingAPI.Events;
+using StardewValley;
+
 namespace UnlimitedIncubatorHatches
 {
     public class ModEntry : Mod
