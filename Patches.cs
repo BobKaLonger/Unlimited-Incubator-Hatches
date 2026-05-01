@@ -12,7 +12,7 @@ namespace UnlimitedIncubatorHatches
             int found = 0;
             foreach (Object o in __instance.objects.Values)
             {
-                if (!o.bigCraftable) continue;
+                if (!o.bigCraftable.Value) continue;
                 var machineData = o.GetMachineData();
                 if (machineData == null || !machineData.IsIncubator
                     || o.heldObject.Value == null || o.MinutesUntilReady > 0) continue;
@@ -44,7 +44,7 @@ namespace UnlimitedIncubatorHatches
             string whatHatched = "??";
             foreach (Object o in house.objects.Values)
             {
-                if (!o.bigCraftable) continue;
+                if (!o.bigCraftable.Value) continue;
                 var machineData = o.GetMachineData();
                 if (machineData == null || !machineData.IsIncubator
                     || o.heldObject.Value == null || o.MinutesUntilReady > 0) continue;
