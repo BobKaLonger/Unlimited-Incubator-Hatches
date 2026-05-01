@@ -10,7 +10,22 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <LangVersion>latest</LangVersion>
     </PropertyGroup>
+    <Target Name="StageForTesting" AfterTargets="Build">
+        <PropertyGroup>
+            <StagingPath>/home/bobkalonger/StardewModding/Test Builds/$(AssemblyName)</StagingPath>
+        </PropertyGroup>
+        <MakeDir Directories="$(StagingPath)" />
+        <ItemGroup>
+            <StageFiles Include="$(TargetDir)$(AssemblyName).dll" />
+            <StageFiles Include="$(TargetDir)manifest.json" />
+            <StageFiles Include="$(TargetDir)i18n/**/*" />
+        </ItemGroup>
+        <Copy SourceFiles="@(StageFiles)" DestinationFiles="@(StageFiles->'$(StagingPath)/%(RecursiveDir)%(Filename)%(Extension)')" />
+    </Target>
     <ItemGroup>
         <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.*" />
+        <Content Include="manifest.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
     </ItemGroup>
 </Project>
