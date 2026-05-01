@@ -1,7 +1,6 @@
 using StardewValley;
 using StardewValley.GameData.FarmAnimals;
 using StardewValley.TokenizableStrings;
-using StardewValley.Events;
 using Object = StardewValley.Object;
 
 namespace UnlimitedIncubatorHatches
@@ -56,7 +55,7 @@ namespace UnlimitedIncubatorHatches
                 break;
             }
 
-            house.currentEvent = new EventArgs(
+            house.currentEvent = new Event(
                 "none/-1000 -1000/farmer 2 9 0/pause 250/message \""
                 + whatHatched
                 + "\"/pause 500/animalNaming/pause 500/end"
