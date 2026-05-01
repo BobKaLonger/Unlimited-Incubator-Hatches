@@ -1,5 +1,5 @@
 {
-    "Name": "Unlimited Incubator Hatches",
+    "Name": "UnlimitedIncubatorHatches",
     "Author": "bobkalonger",
     "Version": "1.0.0",
     "Description": "Loops the hatch sequence to catch all extra incubators in the same building.",
