@@ -5,5 +5,5 @@
     "Description": "Loops the hatch sequence to catch all extra incubators in the same building.",
     "UniqueID": "bobkalonger.UIH_util",
     "EntryDll": "UnlimitedIncubatorHatches.dll",
-    "UpdateKeys": [ "Nexus:-1" ]
+    "UpdateKeys": [ "Nexus:45689" ]
 }
