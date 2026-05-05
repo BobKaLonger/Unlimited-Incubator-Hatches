@@ -1,9 +1,9 @@
 {
     "Name": "UnlimitedIncubatorHatches",
     "Author": "bobkalonger",
-    "Version": "1.0.0",
+    "Version": "1.0.1",
     "Description": "Loops the hatch sequence to catch all extra incubators in the same building.",
-    "UniqueID": "bobkalonger.UIH_util",
+    "UniqueID": "bobkalonger.UnlimitedIncubatorHatches",
     "EntryDll": "UnlimitedIncubatorHatches.dll",
     "UpdateKeys": [ "Nexus:45689" ]
 }
